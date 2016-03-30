@@ -1,0 +1,34 @@
+@startuml
+
+title Conditional - Activity Diagram 
+
+
+start
+
+:input score;
+
+:print scort;
+
+if(90<=marks <=100) then (A)
+:grade=A;
+
+
+else if(80<=marks <90) then (B)
+:grade=B;
+
+else if(70<=marks <80) then (C)
+:grade=c;
+
+else if(60<=marks <70) then (D)
+:grade=D;
+
+else(F)
+:grade=F;
+
+endif
+
+:print grade;
+
+stop
+
+@enduml
