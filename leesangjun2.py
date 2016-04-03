@@ -1,10 +1,29 @@
-﻿temp=input("user input temperature : ")
-sel=raw_input("F or C : ")
-print temp, sel
-if sel=='F':
-    result=(temp-32)/1.8
-    print result, "C"
-elif(sel=='C'):
-    print result,"C"
-else:
-    print "input Error"
+start
+:Let's start rock scissors paper gmae;
+if(rock)
+  if(scissors)
+  :win;
+  elseif(rock)
+  :draw;
+  elseif(paper)
+  :lose;
+  endif
+elseif(scissors)
+  if(scissors)
+  :draw;
+  elseif(rock)
+  :lose;
+  elseif(paper)
+  :win;
+  endif
+elseif(paper)
+  if(scissors)
+  :lose;
+  elseif(rock)
+  :win;
+  elseif(paper)
+  :draw;
+  endif
+endif
+:print result;
+stop
