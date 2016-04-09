@@ -1,0 +1,47 @@
+@startuml 
+
+ 
+title upanddown game 
+
+ 
+start 
+:input minimum(x) and maximum(y); 
+:input USO(user number one); 
+:print min=x max=y; 
+:input UST(user number two); 
+
+ 
+
+ 
+:repeattime=0; 
+
+ 
+
+ 
+
+ 
+
+ 
+while (USO=UST)  is (No) 
+
+ 
+if(UST>USO?) 
+:say high; 
+
+ 
+else(no) 
+:say low; 
+
+ 
+endif 
+:repeattime=repeattime+1; 
+
+ 
+endwhile (Yes) 
+:print repeattime; 
+
+ 
+stop 
+
+ 
+@enduml 
