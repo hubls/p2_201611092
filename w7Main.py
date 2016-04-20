@@ -17,6 +17,11 @@ def drawSquareFrom(tracks):
     tracks.append((100,100))
     for i in range(0,4):
         drawSquareAt(100,tracks[i])
+    
+    def replaytracks(mytracks):
+    for t in range(0,11):
+        t1.goto(mytracks[t])
+        
 def lap7():
     global wn
     global t1
@@ -26,7 +31,47 @@ def lap7():
     mytrack=drawSquareAt(100, (-100,100))
     print mytracks
     drawSquareFrom(100)
+import turtle
+wn=turtle.Screen()
+t1=turtle.Turtle()
+t1.speed(5)
+t1.penup()
 
+mytracks=list()
+t1.goto(-400,300)
+mytracks.append(t1.pos())
+t1.pendown()
+t1.pencolor("Red")
+t1.right(90)
+t1.fd(400)
+mytracks.append(t1.pos())
+t1.backward(150)
+mytracks.append(t1.pos())
+t1.left(90)
+t1.fd(300)
+mytracks.append(t1.pos())
+t1.left(90)
+t1.fd(300)
+mytracks.append(t1.pos())
+t1.back(150)
+mytracks.append(t1.pos())
+t1.right(90)
+t1.fd(300)
+mytracks.append(t1.pos())
+t1.left(90)
+t1.right(90)
+t1.right(90)
+t1.fd(200)
+mytracks.append(t1.pos())
+t1.fd(300)
+mytracks.append(t1.pos())
+t1.back(100)
+mytracks.append(t1.pos())
+t1.left(90)
+t1.fd(200)
+mytracks.append(t1.pos())
+
+replaytracks(mytracks)
 
 def main():
     lab7()
