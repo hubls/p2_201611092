@@ -46,7 +46,7 @@ def lab8():
     word='media software'
     result=countchar(word)
     print result
-    drawgraph
+    drawgraph()
 def main():
     lab8()
 
